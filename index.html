@@ -4,7 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo-List</title>
-    <link rel="stylesheet" href="/css/index.scss" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="todo">
+      <h1 id="todo-form__title">To Do List</h1>
+      <form id="todo-form">
+        <label for="todo-form__text" class="blind">글자</label>
+        <input type="text" name="todo-form__text" id="todo-form__text" />
+        <button type="submit" id="todo-form__submit-button">추가</button>
+      </form>
+
+      <ul id="todo-form__list"></ul>
+    </div>
+  </body>
 </html>
