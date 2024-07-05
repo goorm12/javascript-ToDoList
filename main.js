@@ -22,6 +22,15 @@ function addTodo(e) {
     button.textContent = "삭제하기";
     checkbox.type = "checkbox";
 
+    // 체크박스
+    checkbox.addEventListener("change", (e) => {
+      if (e.target.checked) {
+        div.style.textDecoration = "line-through";
+      } else {
+        div.style.textDecoration = "";
+      }
+    });
+
     // 삭제하기 버튼
     button.addEventListener("click", (e) => {
       e.preventDefault();
