@@ -1,17 +1,20 @@
 @use "a11y";
+@forward "reset";
 
 .blind {
   @include a11y.blind;
 }
 
 #todo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  &-form__title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
 
   &-form__text {
     padding: 0.6rem;
+    margin-bottom: 1rem;
   }
 
   &-form__submit-button {
