@@ -18,6 +18,7 @@ function addTodo(e) {
     div.appendChild(button).classList.add("todo-form__list--remove-button");
 
     text.textContent = todoText;
+    todoInput.value = "";
     button.textContent = "삭제하기";
     checkbox.type = "checkbox";
     // 체크박스
