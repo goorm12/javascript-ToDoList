@@ -11,10 +11,12 @@ function addTodo(e) {
     const checkbox = document.createElement("input");
     const text = document.createElement("span");
     const button = document.createElement("button");
+
     todoList.appendChild(div).classList.add("todo-form__list-content");
     div.appendChild(checkbox).classList.add("todo-form__list--checkbox");
     div.appendChild(text).classList.add("todo-form__list-text");
     div.appendChild(button).classList.add("todo-form__list--remove-button");
+
     text.textContent = todoText;
     button.textContent = "삭제하기";
     checkbox.type = "checkbox";

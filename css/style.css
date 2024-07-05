@@ -158,9 +158,28 @@ table {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 #todo-form__button:hover {
   background-color: #0056b3;
+}
+
+.todo-form__list-text {
+  margin-left: 0.312rem;
+  margin-right: 0.312rem;
+}
+.todo-form__list--remove-button {
+  padding: 0.3rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.todo-form__list--remove-button:hover {
+  background-color: #f8d7da;
+  color: #721c24;
 }
 
 /*# sourceMappingURL=style.css.map */
