@@ -164,6 +164,9 @@ table {
   background-color: #0056b3;
 }
 
+.todo-form__list-content {
+  margin-bottom: 1rem;
+}
 .todo-form__list-text {
   margin-left: 0.312rem;
   margin-right: 0.312rem;
