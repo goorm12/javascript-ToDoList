@@ -150,7 +150,7 @@ table {
   padding: 0.6rem;
   margin-bottom: 1rem;
 }
-#todo-form__submit-button {
+#todo-form__button {
   padding: 0.625rem 1.25rem;
   font-size: 1rem;
   background-color: #007bff;
@@ -159,7 +159,7 @@ table {
   border-radius: 4px;
   cursor: pointer;
 }
-#todo-form__submit-button:hover {
+#todo-form__button:hover {
   background-color: #0056b3;
 }
 
