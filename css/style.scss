@@ -61,4 +61,8 @@
   &__li {
     margin-top: 0.8rem;
   }
+
+  &__checkbox:checked + span {
+    text-decoration: line-through;
+  }
 }

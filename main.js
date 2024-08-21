@@ -1,4 +1,3 @@
-const $todoDiv = document.querySelector("#todo");
 const $todoInput = document.querySelector("#todo-form__text");
 const $todoButton = document.querySelector("#todo-form__button");
 const $todoList = document.querySelector(".todo-list");
@@ -7,7 +6,7 @@ const addTodo = () => {
   $todoList.innerHTML =
     `
   <li class='todo-list__li'>
-    <input type='checkbox'/>
+    <input type='checkbox' class="todo-list__checkbox"/>
     <span>${$todoInput.value}</span>
     <button class='todo-list__remove-button'>삭제</button>
   </li>
@@ -21,10 +20,11 @@ const addTodoEnter = (e) => {
   addTodo();
 };
 
-$todoList.addEventListener("change", (e) => {
-  e.target.nextElementSibling.style.textDecoration = e.target.checked
-    ? "line-through"
-    : "none";
+$todoList.addEventListener("click", (e) => {
+  if (!e.target.matches(".todo-list__remove-button")) {
+    return;
+  }
+  e.target.parentNode.remove();
 });
 
 $todoButton.addEventListener("click", addTodo);

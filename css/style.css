@@ -186,4 +186,7 @@ table {
 }
 .todo-list__li {
   margin-top: 0.8rem;
+}
+.todo-list__checkbox:checked + span {
+  text-decoration: line-through;
 }/*# sourceMappingURL=style.css.map */
