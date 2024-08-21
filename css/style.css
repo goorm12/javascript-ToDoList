@@ -141,6 +141,22 @@ table {
   clip: rect(0, 0, 0, 0);
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 50rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 #todo-form__title {
   font-size: 2.4rem;
   font-weight: bold;
