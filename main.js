@@ -3,6 +3,7 @@ const $todoButton = document.querySelector("#todo-form__button");
 const $todoList = document.querySelector(".todo-list");
 
 const addTodo = () => {
+  if ($todoInput.value.trim() === "") return;
   $todoList.innerHTML =
     `
   <li class='todo-list__li'>
@@ -16,7 +17,7 @@ const addTodo = () => {
 };
 
 const addTodoEnter = (e) => {
-  if (e.key !== "Enter") return;
+  if (e.key !== "Enter" && e.target.value.trim() !== "") return;
   addTodo();
 };
 
