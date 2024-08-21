@@ -33,7 +33,7 @@
   }
 }
 
-.todo-form__list {
+.todo-list {
   &-content {
     margin-bottom: 1rem;
   }
@@ -43,7 +43,7 @@
     margin-right: 0.312rem;
   }
 
-  &--remove-button {
+  &__remove-button {
     padding: 0.3rem;
     background-color: #dc3545;
     color: white;
@@ -56,5 +56,9 @@
       background-color: #f8d7da;
       color: #721c24;
     }
+  }
+
+  &__li {
+    margin-top: 0.8rem;
   }
 }
