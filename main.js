@@ -1,8 +1,10 @@
 const $todoInput = document.querySelector("#todo-form__text");
-const $todoButton = document.querySelector("#todo-form__button");
 const $todoList = document.querySelector(".todo-list");
+const $todoForm = document.querySelector("#todo-form");
 
-const addTodo = () => {
+const addTodo = (e) => {
+  e.preventDefault();
+
   if ($todoInput.value.trim() === "") return;
   $todoList.innerHTML =
     `
@@ -16,11 +18,6 @@ const addTodo = () => {
   $todoInput.value = "";
 };
 
-const addTodoEnter = (e) => {
-  if (e.key !== "Enter" && e.target.value.trim() !== "") return;
-  addTodo();
-};
-
 $todoList.addEventListener("click", (e) => {
   if (!e.target.matches(".todo-list__remove-button")) {
     return;
@@ -28,5 +25,4 @@ $todoList.addEventListener("click", (e) => {
   e.target.parentNode.remove();
 });
 
-$todoButton.addEventListener("click", addTodo);
-$todoInput.addEventListener("keyup", addTodoEnter);
+$todoForm.addEventListener("submit", addTodo);
